@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Search</title>
+</head>
+
+<body>
+    <header>
+        <h1>Products Search</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <input type="radio" id="viewAll" name="searchType" checked>
+                <label for="viewAll">View All</label>
+            </li>
+            <li>
+                <input type="radio" id="searchByCategory" name="searchType">
+                <label for="searchByCategory">Search by Category</label>
+                <select id="categoryDropdown">
+                    <option>Select one...</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="resultsDisplay">
+        </div>
+    </main>
+    <script src="productsSearch.js"></script>
+</body>
+
+</html>
